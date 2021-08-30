@@ -47,7 +47,7 @@ class Main extends React.Component {
                 <HornedBeasts
 
                     title='UniLego'
-                    imageUrl="https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg"
+                    imageUrl="https://i.pinimg.com/736x/b4/61/06/b46106830b841017ea59870b27ec18dc--narwhals-a-unicorn.jpg"
                     description="Lego figurine dressed in a unicorn outfit"
                     keyword="unilego"
                     horns={1}
