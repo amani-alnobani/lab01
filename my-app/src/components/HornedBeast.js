@@ -1,12 +1,13 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Card'
+
 
 class HornedBeasts extends React.Component {
 
 
     constructor(props) {
         super(props);
+        this.love= '';
         this.state = {
             votedHornedBeast: 0,
         }
@@ -22,7 +23,7 @@ class HornedBeasts extends React.Component {
             <div>
                 <Card style={{ width: '100rem' }}>
                     <Card.Title>{this.props.title} </Card.Title>
-                    <Card.Img src={this.props.imageUrl} />
+                    <Card.Img variant="top" src={this.props.imageUrl} onClick={this.increasNumberOfVotes}/>
                     <Card.Body>
                         <Card.Text>
                            Description: {this.props.description}
@@ -31,17 +32,11 @@ class HornedBeasts extends React.Component {
                            Keyword: {this.props.keyword}
                         </Card.Text>
                         <Card.Text>
-                           orn num: {this.props.horns}
+                           horn num: {this.props.horns}
                         </Card.Text>
                         <Card.Text>
-                            Votes: {this.state.votedHornedBeast}
+                            Votes: {this.state.votedHornedBeast} 
                         </Card.Text>
-
-
-
-                        <Button onClick={this.increasNumberOfVotes}>
-                            vote for me!
-                        </Button>
                     </Card.Body>
                 </Card>
             </div>
