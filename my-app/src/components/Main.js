@@ -1,14 +1,16 @@
 import React from 'react';
 import HornedBeasts from './HornedBeast';
-import data from './data.json';
 
+
+//parent
 
 class Main extends React.Component {
 
+
     render() {
         return (
-            <main>{
-                data.map((beast) => {
+            <main> {
+                this.props.data.map((beast) => {
                     return (
                         <HornedBeasts
                             title={beast.title}
@@ -16,12 +18,15 @@ class Main extends React.Component {
                             description={beast.description}
                             keyword={beast.keyword}
                             horns={beast.horns}
+                            filterFunction={this.props.filterBeastByName}
+                            showRequestMessage={this.showRequestMessage}
+                           
+
                         />
                     )
                 })
             }
-
-            </main>
+            </main >
         );
     }
 }
