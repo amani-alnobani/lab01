@@ -27,43 +27,45 @@ class App extends React.Component {
   }
 
   filterBeastByName = (imgTitle) => {
-
+    console.log(imgTitle);
     const filteredBeast = data.filter(beast =>
       beast.title === imgTitle
     )
 
 
-    this.setstate({
+    this.setState({
       selectedBeast: filteredBeast,
       show: true,
     })
   }
 
-handleClose = () => {
-  this.setState({ show: false })
-}
+  handleClose = () => {
+    this.setState({ show: false })
+  }
 
-render(){
-  return (
-    <div>
-      <Header />
+  render() {
+    // console.log(this.state.data);
 
-      <Main
-        handleClose={this.filterBeastByName}
-        hornedBeastData={this.props.data}
-      />
+    return (
+      <div>
+        <Header />
 
-      <SelectedBeast
-        show={this.state.show}
-        handleClose={this.handleClose}
-        selectedBeast={this.props.selectedBeast}
-      />
+        <Main
+          filterBeastByName={this.filterBeastByName}
+          hornedBeastData={this.state.data}
+        />
 
-      <Footer />
+        {this.state.show?<SelectedBeast
+          show={this.state.show}
+          handleClose={this.handleClose}
+          selectedBeast={this.state.selectedBeast}
+        />:'loading'}
 
-    </div>
-  );
-}
+        <Footer />
+
+      </div>
+    );
+  }
 }
 
 

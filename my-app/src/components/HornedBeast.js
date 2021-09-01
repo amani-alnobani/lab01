@@ -17,10 +17,10 @@ class HornedBeasts extends React.Component {
     
 
     increasNumberOfVotes = () => {
+        this.props.filterBeastByName(this.props.title)
         this.setState({
             votedHornedBeast: this.state.votedHornedBeast + 1
         });
-        this.props.filterFunction(this.props.title)
         
     }
     render() {
