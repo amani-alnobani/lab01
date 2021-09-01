@@ -14,7 +14,7 @@ console.log(this.props.selectedBeast[0]);
               </Modal.Header> */}
 
               <Modal.Body>
-              <Card style={{ width: '100%' }}>
+              <Card style={{ width: '25rem' }}>
                     <Card.Title>{this.props?.selectedBeast[0].title} </Card.Title>
                     <Card.Img variant="top" src={this.props?.selectedBeast[0].image_url} onClick={this.increasNumberOfVotes} style={{width:'25%',height:'25%'}}/>
                     <Card.Body>
