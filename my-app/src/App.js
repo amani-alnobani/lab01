@@ -13,6 +13,7 @@ import data from './components/data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 class App extends React.Component {
 
   constructor(props) {
@@ -24,6 +25,10 @@ class App extends React.Component {
 
       },
     }
+  }
+
+  filteredHorns = (newHorns) =>{
+    this.setState({data:newHorns})
   }
 
   filterBeastByName = (imgTitle) => {
@@ -43,6 +48,8 @@ class App extends React.Component {
     this.setState({ show: false })
   }
 
+   
+
   render() {
     // console.log(this.state.data);
 
@@ -53,13 +60,16 @@ class App extends React.Component {
         <Main
           filterBeastByName={this.filterBeastByName}
           hornedBeastData={this.state.data}
+          filteredHorns={this.filteredHorns}
         />
 
-        {this.state.show?<SelectedBeast
+        {this.state.show ? <SelectedBeast
           show={this.state.show}
           handleClose={this.handleClose}
           selectedBeast={this.state.selectedBeast}
-        />:'loading'}
+        /> : 'loading'}
+
+       
 
         <Footer />
 
