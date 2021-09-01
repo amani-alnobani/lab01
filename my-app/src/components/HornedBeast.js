@@ -26,7 +26,7 @@ class HornedBeasts extends React.Component {
     render() {
         return (
             <div>
-                <Card style={{ width: '100%' }}>
+                <Card style={{ width: '25rem' }}>
                     <Card.Title>{this.props.title} </Card.Title>
                     <Card.Img variant="top" src={this.props.imageUrl} onClick={this.increasNumberOfVotes} />
                     <Card.Body>
