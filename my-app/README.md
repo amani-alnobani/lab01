@@ -1,4 +1,6 @@
-### Number and name of feature: Feature #1: Display images
+# class02
+
+## Number and name of feature: Feature #1: Display images
 
 ### Estimate of time needed to complete: 1 hour
 
@@ -8,29 +10,40 @@
 
 ### Actual time needed to complete: 1 hour
 
-### Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+## Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
-### Estimate of time needed to complete: 1 hour
+### Estimate of time needed to complete: 1 hour 
 
 ### Start time: 6pm
 
 ### Finish time:7pm
 
 ### Actual time needed to complete: 2 hour
- 
 
-### Number and name of feature: Feature #2: Allow users to vote for their favorite beast
-
-### Estimate of time needed to complete: 2 hour
-
-### Start time: 8pm
-
-### Finish time:10 pm
-
-### Actual time needed to complete: 1 and a half hour
+## Number and name of feature: Feature #3: Bootstrap
 
 
+### Estimate of time needed to complete: 1 hour
 
+### Start time: 7pm
+
+### Finish time:8pm
+
+### Actual time needed to complete: 2 hour
+
+# // // // // // // // // // // // // // // // // // // // // // // // // //
+
+# class03
+
+## Number and name of feature: Feature #1: Display a Modal
+
+### Estimate of time needed to complete: 1 hour
+
+### Start time: 4pm
+
+### Finish time:5pm
+
+### Actual time needed to complete: 1 hour
 
 
 # Getting Started with Create React App
