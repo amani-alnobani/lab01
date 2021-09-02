@@ -17,13 +17,6 @@ class Main extends React.Component {
 
     }
 
-    hornsNumber = (numberOfHorns) => {
-
-        this.setState({
-            hornNum: numberOfHorns
-        })
-    }
-
     handleSubmit(event) {
         event.preventDefault();
         console.log('hello');
