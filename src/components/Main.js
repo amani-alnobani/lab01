@@ -44,7 +44,7 @@ class Main extends React.Component {
              newHorns = allData;
         }
 
-        // console.log(this.props.filteredHorns(newHorns));
+        console.log(this.props.filteredHorns(newHorns));
         this.props.filteredHorns(newHorns);
         }
 
