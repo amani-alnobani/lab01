@@ -14,7 +14,7 @@ class Main extends React.Component {
     }
     handleChange = (event) => {
         event.preventDefault();
-        let allData = this.state.data;
+        let allData = this.props.data;
         let selectedNumber = parseInt(event.target.value);
         let filteredData = allData.filter((value) => {
             return value.horns === selectedNumber;
